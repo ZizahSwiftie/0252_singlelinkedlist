@@ -184,9 +184,8 @@ int main()
         default:
         {
             cout << "nPilihan salah !" << endl;
-        }
-
-
+            }
+            }
         }
     }
 }
