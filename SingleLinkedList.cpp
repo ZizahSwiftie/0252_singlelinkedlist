@@ -185,7 +185,8 @@ int main()
         {
             cout << "nPilihan salah !" << endl;
             }
+            }
         }
     }
-    }
-};
+
+}
