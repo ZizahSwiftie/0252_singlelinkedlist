@@ -105,6 +105,7 @@ void traverse()
     }
 }
 };
+
 int main()
 {
     LinkedList mhs;
@@ -134,7 +135,7 @@ int main()
             if (mhs.listEmpty())
             {
                 cout << endl
-                     << "List Kosong"; << endl;
+                     << "List Kosong" << endl;
                 break;
             }
             cout << endl
@@ -145,12 +146,14 @@ int main()
                      << "Data tidak ditemukan" << endl;
             else
                 cout << endl
-                     << "Data dengan nomor mahasiswa" << nim << " berhasil dihapus " endl;
+                     << "Data dengan nomor mahasiswa" << nim << " berhasil dihapus " << endl;
         }
         break;
         case '3':
         {
             mhs.traverse();
+        }
+        break;
         }
     }
 }
