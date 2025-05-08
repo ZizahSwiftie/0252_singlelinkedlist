@@ -54,6 +54,6 @@ class List
 
     bool listEmpty() 
     {
-        
+        return START == NULL;
     }
-}
+};
