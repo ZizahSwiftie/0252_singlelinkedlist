@@ -163,12 +163,30 @@ int main()
         }
         Node *current, *previous;
         cout << endl
-        cout << "\nMasukkan no mahasiswa yang dicari: ";        
+             << "\nMasukkan no mahasiswa yang dicari: ";        
         cin >> nim;
         if (mhs.Search(nim, &previous, &current) == false)
            cout << endl
                 << "Data tidak ditemukan" << endl;
         else
+        {
+            cout << endl
+                 << "Data ditemukan" << endl;
+            cout << "\nNo Mahasiswa: " << current->noMhs << endl;
+            cout << "\n";
+        }
+        break;
+        case '5':
+        {
+            exit(0);
+        }
+        break;
+        default:
+        {
+            cout << "nPilihan salah !" << endl;
+        }
+
+
         }
     }
 }
