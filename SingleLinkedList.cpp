@@ -8,12 +8,12 @@ class Node {
     Node *next;
 };
 
-class List 
+class LinkedList 
 {
     Node *START;
 
     public:
-    List() {
+    LinkedList() {
         START = NULL;
     }
     void addNode()
@@ -54,6 +54,19 @@ class List
 
     bool listEmpty() 
     {
-        return START == NULL;
+        return (START == NULL);
+    }
+
+    bool Search(int nim, Node **previous, Node **current) 
+    {
+        *previous = START;
+        *current = START;
+
+        while ((*current != NULL) && ((*current)->noMhs)) 
+        {
+            *previous = *current;
+            *current = (*current)->next;
+        }
+        return (*current != NULL);
     }
 };
