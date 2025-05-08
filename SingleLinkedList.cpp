@@ -116,7 +116,7 @@ int main()
         cout << endl
              << "Menu";
         cout << endl;
-            cout << "1. Menambah data kedalam list" << endl;
+        cout << "1. Menambah data kedalam list" << endl;
         cout << "2. Menghapus data dari dalam list" << endl;
         cout << "3. Menampilkan data didalam list" << endl;
         cout << "4. Mencari data dalam list" << endl;
@@ -188,5 +188,5 @@ int main()
             }
         }
     }
-
+    }
 }
